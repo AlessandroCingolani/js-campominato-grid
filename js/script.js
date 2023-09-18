@@ -1,5 +1,5 @@
 const container = document.querySelector('.container');
-const choiceLevel = document.querySelector('.choise-level');
+const choiceLevel = document.querySelector('.choice-level');
 const chooseLevel = document.getElementById('stages');
 
 reset();
@@ -17,8 +17,6 @@ function init(stage,n){
     container.append(square);
   }
 }
-
-
 
 
 
