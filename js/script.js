@@ -1,14 +1,15 @@
-const container = document.querySelector('.container')
-const choiseLevel = document.querySelector('.choise-level')
+const container = document.querySelector('.container');
+const choiceLevel = document.querySelector('.choise-level');
+const chooseLevel = document.getElementById('stages');
 
 reset();
 
 
-function init(){
-  for(let i = 1; i <= 100;i++) {
-    const square = genSquare(i);
-    // square.classList.add('hard')
-    square.addEventListener('click',function(){
+function init(stage,n){
+  for(let i = 1; i <= n ;i++) {
+      const square = genSquare(i);
+      square.classList.add(stage) 
+      square.addEventListener('click',function(){
       console.log(this.id);
       this.classList.toggle('checked')
     });
@@ -27,9 +28,18 @@ function genBtnStart (){
   const btn = document.createElement('button');
   btn.className = 'btn-play'
   btn.innerHTML = 'Start';
+
   btn.addEventListener('click',function(){
     container.innerHTML = '';
-    init()
+    if(chooseLevel.value === 'easy'){
+      init('easy',100)
+    }
+    else if(chooseLevel.value === 'normal'){
+      init('normal',81)
+    }
+    else if(chooseLevel.value === 'hard'){
+      init('hard',49)
+    }
   })
   return btn;
 }
@@ -46,5 +56,5 @@ function genSquare(index){
 // reset function
 function reset(){
   container.innerHTML ='';
-  choiseLevel.append(genBtnStart());
+  choiceLevel.append(genBtnStart());
 }
