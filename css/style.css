@@ -6,7 +6,6 @@
 
 header,footer {
   height: 70px;
-  background-color: blue;
 }
 
 .container-header {
@@ -44,4 +43,12 @@ main {
 
 .square.checked {
   background-color: rgba(0, 255, 255, 0.599);
+}
+
+.btn-play {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: aquamarine;
+  background-color: rgba(0, 0, 255, 0.704);
 }
