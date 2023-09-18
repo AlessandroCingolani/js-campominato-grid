@@ -31,3 +31,7 @@ main {
   border: 2px solid white;
   background-color: rgb(229, 255, 0);
 }
+
+.square.checked {
+  background-color: rgba(0, 255, 255, 0.599);
+}
