@@ -9,6 +9,15 @@ header,footer {
   background-color: blue;
 }
 
+.container-header {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 main {
   display: flex;
   justify-content: center;
