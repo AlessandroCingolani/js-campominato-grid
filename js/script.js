@@ -46,6 +46,5 @@ function genSquare(index){
 // reset function
 function reset(){
   container.innerHTML ='';
-  choiseLevel.innerHTML ='';
   choiseLevel.append(genBtnStart());
 }
