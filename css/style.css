@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,footer {
+  height: 70px;
+  background-color: blue;
+}
+
+main {
+  height: calc(100vh - 140px);
+}
