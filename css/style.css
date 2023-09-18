@@ -10,5 +10,24 @@ header,footer {
 }
 
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: calc(100vh - 140px);
+  background-color: aqua;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+  background-color: brown;
+}
+
+.square {
+  width: calc(100% / 10);
+  aspect-ratio: 1 / 1;
+  border: 2px solid white;
+  background-color: rgb(229, 255, 0);
 }
