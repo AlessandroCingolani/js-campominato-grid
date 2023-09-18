@@ -7,7 +7,7 @@ reset();
 function init(){
   for(let i = 1; i <= 100;i++) {
     const square = genSquare(i);
-    
+    // square.classList.add('hard')
     square.addEventListener('click',function(){
       console.log(this.id);
       this.classList.toggle('checked')
