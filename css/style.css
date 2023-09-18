@@ -41,6 +41,18 @@ main {
   cursor: pointer;
 }
 
+.square.easy {
+  width: calc(100% / 10);
+}
+
+.square.normal {
+  width: calc(100% / 9);
+}
+
+.square.hard {
+  width: calc(100% / 7);
+}
+
 .square.checked {
   background-color: rgba(0, 255, 255, 0.599);
 }
